@@ -1,34 +1,35 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
 *.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+redmind.txt
+remove.sh
+/images/.venv/*
+
+# Ignore downloaded TTS models in assets
+/app/src/main/assets/*
+!/app/src/main/assets/.gitkeep
 
 # Keystore files
 *.jks
 *.keystore
+key.properties
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Virtual environments & hidden dirs
+.venv/
+venv/
+env/
+.env
 
-# Android Profiling
-*.hprof
+# Build outputs and artifacts
+Release/
+*.apk
+*.aab
+*.aar
+*.log
